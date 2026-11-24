@@ -7,7 +7,7 @@ def create_dataframe():
     data= {
             'Id':[1,2,3,4,5,6,7,8,9,10],
             "reviews":[
-                        "Inception is a mind-bending masterpiece.",
+                        "Inception is a mind-bending masterpiece.V2",
                         "The Office never fails to make me laugh.",
                         "Interstellar left me emotionally devastated.",
                         "Breaking Bad has perfect character development.",
@@ -40,7 +40,7 @@ def process_data(k):
 if __name__=='__main__':
     df=create_dataframe()
     save_dataFrame(df)
-    k=3
+    k=5
     ProcessData=process_data(k)
     print(f"data sahpe:{df.shape}")
     print(f"processed data sahpe:{ProcessData.shape}")
